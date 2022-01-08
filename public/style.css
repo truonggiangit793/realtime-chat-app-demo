@@ -1,0 +1,57 @@
+html, body {
+    text-align: center;
+    font-family: 'Avenir Next', 'Helvetica', 'Arial', sans-serif;
+}
+:root {
+	--dark-color-a: #667aff;
+	--dark-color-b: #7386ff;
+	--light-color: #e6e9ff;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+}
+
+
+html, body, li, form, ul {
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    padding-bottom: 2%;
+}
+
+li {
+    list-style: none;
+
+}
+.user-message{
+    text-align: left;
+    padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+	overflow-wrap: break-word;
+}
+
+#thread {
+    display: block;
+    border: 1px solid darkgrey;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+}
+fieldset{
+    max-width: 70%;
+    margin: auto;
+}
+form{
+    margin: auto;
+    display: inline-block;
+
+}
