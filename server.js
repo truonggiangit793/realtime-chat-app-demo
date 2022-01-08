@@ -1,3 +1,5 @@
+const env = require("dotenv").config();
+const PORT = process.env.PORT || 8080;
 const express = require("express")
 const app = express();
 const server = require('http').createServer(app);
@@ -24,6 +26,6 @@ socket.on("connection", (client) => {
     });
 })
 
-server.listen(3000, () => {
-    console.log('server is running')
+server.listen(PORT, () => {
+    console.log('server is running on '+PORT)
 })
